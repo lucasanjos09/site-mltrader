@@ -122,14 +122,7 @@ body {
 }
 
 
-#botao{
-  padding-top: 10%;
-  background:#ff6f3d; 
-  border-radius: 30px;
-  padding: 20px; 
-  cursor: pointer; 
-  color: #fff; 
-  border: none; 
+.botaoAdquira{
   font-size: 15px;
   margin-left: 30%;
   margin-top: 10%;
@@ -151,9 +144,80 @@ body {
   font-family: Fugaz One;
 }
 
-#contato{
-  height: 100vh;
+.title-section{
+  padding-top: 60px;
+  margin-left: 0.1%;
+  font-family: Oswald;
+  font-size: 25pt;
+  margin-bottom: 10px;
 }
 
+.form-contato{
+  height: 45vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
+.form-contato input{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 13px;
+}
 
+.form-contato textarea{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border-bottom: 1px solid #ff6f3d;
+}
+
+.botao{
+  background:#ff6f3d; 
+  border-radius: 30px;
+  padding: 20px; 
+  cursor: pointer; 
+  color: #fff; 
+  border: none; 
+  transition: background-color 0.5s ease;
+  font-weight: bold;
+  font-size: 13pt;
+}
+
+.botao:hover{
+  background:#ff5922;
+}
+
+@media screen and (max-width: 1400px) {
+  .form-contato{
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .form-contato{
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
